@@ -1,0 +1,9 @@
+$superclarendon: SuperClarendon;
+$avenir: Avenir Next;
+
+
+@mixin sub-heading-font() {
+    font-family: $avenir;
+    font-weight: 500;
+    font-size: 0.7em;
+}

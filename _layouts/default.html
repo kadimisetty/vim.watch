@@ -1,20 +1,14 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-US">
+<head>
   {% include head.html %}
+</head>
 
-  <body>
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
+<body>
+  {% include header.html %}
+  {{ content }}
+  {% include subscription.html %}
+  {% include footer.html %}
+</body>
 </html>

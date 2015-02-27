@@ -1,0 +1,93 @@
+// BASE COLORS 
+// $_color-base-bisque: #F9EEBE;
+$_color_base-bisque: hsl(49, 83%, 95%);
+$_color_base-burlywood: #D1CFC5;
+$_color_base-skyblue: #97C3F0;
+$_color_base-orchidwhite: #FEFDF4;
+
+
+// PALETTES
+// Use following 6 tones for each shade -
+//  x-dark, dark *, mid-dark, base (default),
+//  mid-light, light *, x-light
+$palettes: (
+    bisque: (
+        x-light : lighten($_color_base-bisque, 20%),
+        light   : lighten($_color_base-bisque, 10%),
+        base    : $_color_base-bisque,
+        dark    : darken($_color_base-bisque, 10%)
+    ),
+
+    burlywood: (
+        light    : lighten($_color_base-burlywood, 10%),
+        base     : $_color_base-burlywood,
+        dark     : darken($_color_base-burlywood, 10%),
+        mid-dark : darken($_color_base-burlywood, 20%),
+        x-dark   : darken($_color_base-burlywood, 70%),
+    ),
+    skyblue: (
+        x-light   : lighten($_color_base-skyblue, 20%),
+        mid-light : lighten($_color_base-skyblue, 18%),
+        light     : lighten($_color_base-skyblue, 10%),
+        base      : $_color_base-skyblue,
+        dark      : darken($_color_base-skyblue, 6%),
+        x-dark    : darken($_color_base-skyblue, 20%),
+    ),
+    orchidwhite: (
+        light     : lighten($_color_base-orchidwhite, 10%),
+        base      : $_color_base-orchidwhite,
+    ),
+);
+
+
+                                
+// HELPERS
+// Chcecks is list contains
+@function list-contains($list, $item) {
+    // Item is a single item
+    @if index($list, $item) {
+        @return true; } 
+    @return false;
+}
+
+
+
+// PALETTE FUNCTION
+/* TODO 
+ * - Return default values filled if shade wasn;t configured by the user
+ * - Check if darken(-20) is same as lighten(20) */
+@function palette($palette, $shade: 'base') {
+    
+
+    // Check if desired palette exists
+    @if map-has-key($palettes, $palette) {
+        $palette : map-get($palettes, $palette);
+
+        // Check if desired shade exists
+        @if map-has-key($palette, $shade) {
+            @return map-get($palette, $shade); } 
+        @else {
+            // TODO: Return based on the defaukt shade values
+            $shade-defaults-percentages: (
+                x-light   : 20%,
+                mid-light : 15%,
+                light     : 10%,
+                base      : 0%,
+                dark      : 10%,
+                mid-dark  : 15%,
+                x-dark    : 20%);
+               
+                // If shade in lighten, return with ligthen function
+                $light-shades : (x-light, mid-light, light);
+                $dark-shades : (x-dark, mid-dark, dark);
+
+                @if list-contains($light-shades, $shade) {
+                    @return lighten($palette); }
+                @else if list-contains($dark-shades, $shade) {
+                    @return darken($palette); }
+                @else {
+                    // this is base color
+                    @return $palette; } } } 
+    @else {
+        @error "The specified palette doesnt exist!" }
+}
