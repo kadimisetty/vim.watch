@@ -3,8 +3,10 @@ body {
     font-family: $superclarendon;
 
     // Colors & Textures
-    $texture-top-background: palette(bisque, x-light);
-    $texture-bottom-background: palette(bisque, light);
+    // $texture-top-background: palette(bisque, x-light);
+    // $texture-bottom-background: palette(bisque, light);
+    $texture-top-background: palette(orchidwhite, light);
+    $texture-bottom-background: palette(orchidwhite, light);
     @include texture(180deg,
         $texture-top-background,
         $texture-bottom-background,

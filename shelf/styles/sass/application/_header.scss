@@ -1,12 +1,17 @@
 header {
     @include background(url("/shelf/assets/img/vwlogo.svg") center no-repeat);
     background-size: 4em 4em;
+    opacity: 0.8;
+
+    &:hover {
+    }
 }
 
 header h1 a {
     @include hide-text;
     display: block;
 	height: 4em;
+
 }
 
 

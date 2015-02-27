@@ -417,7 +417,8 @@ footer p {
 header {
   background: url("/shelf/assets/img/vwlogo.svg") center no-repeat;
   background: url("/shelf/assets/img/vwlogo.svg") center no-repeat;
-  background-size: 4em 4em; }
+  background-size: 4em 4em;
+  opacity: 0.8; }
 
 header h1 a {
   height: 1em;
@@ -450,26 +451,26 @@ header h1 {
     display: block;}
 }
 */
-ul {
+article ul {
   list-style-type: none;
   padding-left: 0;
   margin-top: 1.5em;
   font-weight: 200;
   font-size: 1em;
   text-align: center; }
-  ul li {
+  article ul li {
     margin: 0;
     padding: 0; }
-    ul li a {
+    article ul li a {
       margin-bottom: 0.6em;
       display: inline-block;
       text-decoration: none;
       color: #bab7a9;
       padding-top: 0.6em;
       border-top: 1px solid #e8e7e1; }
-      ul li a:hover {
+      article ul li a:hover {
         color: #a4a08c; }
-    ul li:first-child a {
+    article ul li:first-child a {
       border-top: none; }
 
 #player {
@@ -560,6 +561,7 @@ ul {
         color: #97C3F0;
         background-color: #e7f1fc; }
   .title-card h2 {
+    margin-top: 2em;
     color: #D1CFC5;
     font-family: Avenir Next;
     font-weight: 500;
@@ -568,8 +570,6 @@ ul {
     display: block;
     margin-right: 4.82916%;
     width: 100%; }
-    article .title-card h2 {
-      margin-top: 2em; }
     .title-card h2:last-child {
       margin-right: 0; }
     @media screen and (max-width: 540px) {

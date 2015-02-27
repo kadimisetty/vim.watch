@@ -9,7 +9,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://vim.watch" # the base hostname & protocol for your site
 twitter_username: sri
 github_username:  kadimisetty
-permalink: /:title.html
+permalink: /:title
 
 # Build settings
 markdown: kramdown

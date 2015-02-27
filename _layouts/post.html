@@ -2,13 +2,14 @@
 layout: default
 ---
 <article>
+
   <hgroup class="title-card">
     <h1><a href="#">{{ page.title }}</a></h1>
-    <h2>{{ page.duration }}</h2>
+    <h2>{{ page.duration_minutes }} minutes</h2>
   </hgroup>
 
-  {% capture post_meta_id %}{{ page.vimeo_id }}{% endcapture %}
-  {% include player.html vimeo_id= post_meta_id %}
+  {% capture meta_vimeo_id %}{{ page.vimeo_id }}{% endcapture %}
+  {% include player.html vimeo_id= meta_vimeo_id %}
 
   {{ content }}
 </article>
