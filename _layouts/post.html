@@ -9,7 +9,10 @@ layout: default
   </hgroup>
 
   {% capture meta_vimeo_id %}{{ page.vimeo_id }}{% endcapture %}
-  {% include player.html vimeo_id= meta_vimeo_id %}
+  {% include player.html vimeo_id=meta_vimeo_id %}
 
   {{ content }}
+
+  {% include comments.html show_comments=page.comments %}
+
 </article>
