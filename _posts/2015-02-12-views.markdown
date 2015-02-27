@@ -3,10 +3,10 @@ layout:           post
 title:            views
 date:             2015-02-12
 duration_minutes: 6
-vimeo_id:         119505893
+vimeo_id:         120830517
 comments:         true
 ---
-- [:help usr_21]()
-- [Make Views Automatic]()
-- [Spell Checking]()
-- [restore view]()
+- [Section 21.5](http://vimdoc.sourceforge.net/htmldoc/usr_21.html#21.5)
+- [Vim Spell-Checking](https://robots.thoughtbot.com/vim-spell-checking)
+- [Make Views Automatic](http://vim.wikia.com/wiki/Make_views_automatic)
+- [restore_view.vim](http://www.vim.org/scripts/script.php?script_id=4021)
