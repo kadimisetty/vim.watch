@@ -1,8 +1,4 @@
-.comment-container{
-    clear: both;
-    margin-top: 3em;
+.comments {
+    margin-top:    2em;
     margin-bottom: 3em;
-
-    // Grid
-    @include fill-parent()
 }
