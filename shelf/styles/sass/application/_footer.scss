@@ -1,0 +1,17 @@
+footer {
+    // Typography
+    text-align: center;
+
+    // Layout
+    margin-top: 1em;
+    margin-bottom: 1.8em;
+}
+
+
+footer p {
+    // Colors
+    color: palette(burlywood);
+
+    // Typography
+    @include sub-heading-font();
+}

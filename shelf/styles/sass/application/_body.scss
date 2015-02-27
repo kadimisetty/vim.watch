@@ -1,0 +1,20 @@
+body {
+    // Fonts
+    font-family: $superclarendon;
+
+    // Colors & Textures
+    $texture-top-background: palette(bisque, x-light);
+    $texture-bottom-background: palette(bisque, light);
+    @include texture(180deg,
+        $texture-top-background,
+        $texture-bottom-background,
+        53, /* Pattern Number */
+        1   /* 0 is inverted, 1 is not */
+        );  
+
+    // Spacing
+    padding-top: 4em;
+
+    // Grid
+    @include outer-container;
+}

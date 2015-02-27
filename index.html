@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<section class="title-cards">
+
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <hgroup class="title-card">
+        <h1><a href="{{ post.url | prepend: site.baseurl }}" >{{ post.title }}</a></h1>
+        <h2>{{ post.duration }}</h2>
+        </hgroup>
+      </li>
+    {% endfor %}
+
+  </ul>
+
+  <div class="archives">
+  </div><!-- /archives -->
+
+</section><!-- /introductory-index -->

@@ -1,0 +1,58 @@
+#showarchives
+{
+    @include outer-container();
+}
+
+#buttonContainer
+{
+    @include span-columns(3);
+    // position: absolute;
+    // left: 45px;
+    // width: 71px;
+    // top: 71px;
+    height: 34px;
+    background: rgb(87, 199, 255);
+    border: none;
+    -webkit-border-radius: 17px 17px 17px 17px;
+       -moz-border-radius: 17px 17px 17px 17px;
+            border-radius: 17px 17px 17px 17px;
+}
+#firstDot
+{
+    position: absolute;
+    left: 59px;
+    width: 10px;
+    top: 83px;
+    height: 10px;
+    background: rgb(255, 255, 255);
+    border: none;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+}
+#secondDot
+{
+    position: absolute;
+    left: 75px;
+    width: 10px;
+    top: 83px;
+    height: 10px;
+    background: rgb(255, 255, 255);
+    border: none;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+}
+#thirdDot
+{
+    position: absolute;
+    left: 91px;
+    width: 10px;
+    top: 83px;
+    height: 10px;
+    background: rgb(255, 255, 255);
+    border: none;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+}

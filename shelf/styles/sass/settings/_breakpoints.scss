@@ -1,0 +1,7 @@
+// Neat Helpers
+// - Import helpers to create breakpoints
+@import "../lib/neat/neat-helpers";
+
+
+// Breakpoints
+$mobile: new-breakpoint(max-width 540px 6);

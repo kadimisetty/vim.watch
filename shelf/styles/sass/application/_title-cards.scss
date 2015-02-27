@@ -1,0 +1,90 @@
+.title-cards ul {
+    // Remove all list styles
+    list-style-type: none;
+
+    // Remove spacing in ul and lists
+    &, li {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+.title-card {
+    text-align: center;
+    margin-bottom: 0.4em;
+
+    // Grid
+    @include outer-container();
+
+    h1 {
+        // Spacing
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+        // Grid
+        @include span-columns(6);
+
+        @include media($mobile) {
+            // Spacing
+            margin-bottom: 0.1em;
+        }       
+
+        a {
+            // Colors
+            color: palette(skyblue);
+            background-color: palette(skyblue, x-light);
+
+            // Borders
+            @include border-top-radius(2em);
+            @include border-bottom-radius(2em);
+
+            // Spacing
+            padding: 0.3em 0.8em 0.4em 0.8em;
+            margin-bottom: 0;
+
+            // Typography
+            text-decoration: none;
+
+
+            // Transitions
+            @include transition(color 0.2s ease-in-out);
+            @include transition(background-color 0.2s ease-in-out);
+
+
+            &:hover {
+                // Colors
+                color: palette(skyblue);
+                background-color: palette(skyblue, mid-light);
+
+                // Transforms
+                // @include transform(translateY(-10px));
+            }
+        }
+    }
+
+
+    h2 {
+
+        //Spacing
+        article & {
+            // Currently a hack to show spacing on detail pages
+            margin-top: 2em; }
+
+
+        // Colors
+        color: palette(burlywood);
+ 
+        // Typography
+        @include sub-heading-font();
+
+        // Grid
+        @include span-columns(6);
+
+
+        @include media($mobile) {
+            // display
+            display: none;
+        }       
+    }
+}

@@ -1,0 +1,32 @@
+header {
+    @include background(url("/shelf/assets/img/vwlogo.svg") center no-repeat);
+    background-size: 4em 4em;
+}
+
+header h1 a {
+    @include hide-text;
+    display: block;
+	height: 4em;
+}
+
+
+
+/*
+header {
+    // Spacing
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+header h1 {
+    // Background
+    @include hide-text(2em);
+
+    // @include background(url("../../assets/img/vwlogo.svg") center no-repeat);
+    @include background(url("/shelf/assets/img/vwlogo.svg") center no-repeat);
+    background-size: auto 2em;
+
+    a {
+    display: block;}
+}
+*/

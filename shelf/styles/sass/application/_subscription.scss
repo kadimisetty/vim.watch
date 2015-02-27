@@ -1,0 +1,63 @@
+
+.subscription {
+    // Typography
+    text-align: center;
+
+    // Spacing
+    margin-top: 3em;
+}
+
+.subscription input:focus {
+    // Stop Safari from displaying a blue border
+    outline:none;
+}
+
+.subscription input {
+    // Stop safari from adding a dark inset inner shadow
+    -webkit-appearance: none !important;
+    border: none !important;
+
+    // Typography
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 900;
+
+    // Color
+    background: palette(burlywood);
+    color: palette(bisque, x-light);
+
+    // Shadows & Borders
+    // box-shadow: inset 1px 1px 3px 0px palette(burlywood, mid-dark);
+    box-shadow: inset 1px 1px 3px 0px palette(burlywood, mid-dark);
+    border-radius: 2em;
+    
+    // Display
+    opacity: 0.6;
+
+    // Spacing
+    padding: 0.3em 0.8em 0.4em 0.8em;
+   
+    // Layout 
+    width: 12em;
+
+    // Transitions
+    @include transition(all 0.3s ease-in-out); 
+
+
+    &:hover {
+        // Display
+        opacity: 0.8;
+    }
+
+
+    &:focus {
+        // Display
+        opacity: 1.0;
+    }
+
+
+    @include placeholder {
+        // Colors
+        color: palette(bisque, x-light);
+    }
+}
