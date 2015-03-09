@@ -10,6 +10,14 @@
 }
 
 
+.simple-subscription{
+    @include media($mobile) {
+        // Spacing
+        margin-top: 2em;
+    }       
+}
+
+
 .simple-subscription h1 a{
     // Colors
     // color: palette(bisque, x-light);

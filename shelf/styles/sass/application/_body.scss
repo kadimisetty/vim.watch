@@ -14,9 +14,16 @@ body {
         1   /* 0 is inverted, 1 is not */
         );  
 
-    // Spacing
-    padding-top: 4em;
 
     // Grid
     @include outer-container;
+
+    // Spacing
+    padding-top: 4em;
+
+
+    @include media($mobile) {
+        // Spacing
+        padding-top: 0.6em;
+    }       
 }

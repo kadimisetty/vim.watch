@@ -388,18 +388,27 @@ body {
   font-family: SuperClarendon, Georgia, serif;
   background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/husk.png"), -webkit-linear-gradient(180deg, white, white), center no-repeat white scroll;
   background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/husk.png"), linear-gradient(180deg, white, white), center no-repeat white scroll;
-  padding-top: 4em;
   max-width: 45em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-top: 4em; }
   body::after {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 540px) {
+    body {
+      padding-top: 0.6em; } }
 
 .comments {
   margin-top: 2em;
-  margin-bottom: 3em; }
+  margin-bottom: 3em;
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 100%; }
+  .comments:last-child {
+    margin-right: 0; }
 
 footer {
   text-align: center;
@@ -433,26 +442,13 @@ header {
       display: block;
       width: 0;
       height: 100%; }
+  @media screen and (max-width: 540px) {
+    header {
+      padding: 0;
+      background-size: 4em 4em; }
+      header h1 a {
+        height: 3em; } }
 
-/*
-header {
-    // Spacing
-    margin-bottom: 3em;
-    text-align: center;
-}
-
-header h1 {
-    // Background
-    @include hide-text(2em);
-
-    // @include background(url("../../assets/img/vwlogo.svg") center no-repeat);
-    @include background(url("/shelf/assets/img/vwlogo.svg") center no-repeat);
-    background-size: auto 2em;
-
-    a {
-    display: block;}
-}
-*/
 article ul {
   list-style-type: none;
   padding-left: 0;
@@ -520,6 +516,10 @@ article ul {
   .title-cards ul, .title-cards ul li {
     margin: 0;
     padding: 0; }
+
+@media screen and (max-width: 540px) {
+  .simple-subscription {
+    margin-top: 2em; } }
 
 .simple-subscription h1 a {
   color: #bab7a9;
