@@ -1,9 +1,9 @@
 $superclarendon: SuperClarendon;
-$avenir: Avenir Next;
+$avenir: 'Avenir Next', 'Open Sans', 'Helvetica Neue', sans-serif;
 
 
 @mixin sub-heading-font() {
-    font-family: $avenir;
+    font-family: $avenir, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
     font-size: 0.7em;
 }

@@ -385,7 +385,7 @@ html {
  * - Return default values filled if shade wasn;t configured by the user
  * - Check if darken(-20) is same as lighten(20) */
 body {
-  font-family: SuperClarendon;
+  font-family: SuperClarendon, Georgia, serif;
   background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/husk.png"), -webkit-linear-gradient(180deg, white, white), center no-repeat white scroll;
   background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/husk.png"), linear-gradient(180deg, white, white), center no-repeat white scroll;
   padding-top: 4em;
@@ -408,7 +408,7 @@ footer {
 
 footer p {
   color: #D1CFC5;
-  font-family: Avenir Next;
+  font-family: "Avenir Next", "Open Sans", "Helvetica Neue", sans-serif, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
   font-size: 0.7em; }
 
@@ -573,7 +573,7 @@ article ul {
   .title-card h2, .simple-subscription h2 {
     margin-top: 2em;
     color: #D1CFC5;
-    font-family: Avenir Next;
+    font-family: "Avenir Next", "Open Sans", "Helvetica Neue", sans-serif, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 500;
     font-size: 0.7em;
     float: left;
