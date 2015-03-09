@@ -1,0 +1,12 @@
+---
+layout:           post
+title:            sessions
+date:             2015-03-09
+duration_minutes: 5
+vimeo_id:         121657990
+comments:         true
+---
+- [Section 21.4](http://vimdoc.sourceforge.net/htmldoc/usr_21.html#21.4 "Sessions")
+- [Go away and Come back](http://vim.wikia.com/wiki/Go_away_and_come_back "Go away and Come back")
+- [Vim Obsession](https://github.com/tpope/vim-obsession "Obsession")
+- [ProSession](https://github.com/tpope/vim-obsession "Procession")
