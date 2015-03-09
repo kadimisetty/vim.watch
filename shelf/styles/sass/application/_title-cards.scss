@@ -10,7 +10,35 @@
 }
 
 
-.title-card {
+.simple-subscription h1 a{
+    // Colors
+    // color: palette(bisque, x-light);
+    // background-color: palette(burlywood, light);
+    color: palette(burlywood, dark);
+    background-color: palette(burlywood, mid-light);
+    &:hover {
+        // Colors
+        // background-color: palette(burlywood);
+        background-color: palette(burlywood, light);
+    }
+}
+
+
+.title-card h1 a{
+    // Colors
+    color: palette(skyblue);
+    background-color: palette(skyblue, x-light);
+    &:hover {
+        // Colors
+        color: palette(skyblue);
+        background-color: palette(skyblue, mid-light);
+    }
+}
+
+
+
+
+.title-card, .simple-subscription {
     text-align: center;
     margin-bottom: 0.4em;
 
@@ -31,9 +59,6 @@
         }       
 
         a {
-            // Colors
-            color: palette(skyblue);
-            background-color: palette(skyblue, x-light);
 
             // Borders
             @include border-top-radius(2em);
@@ -50,16 +75,6 @@
             // Transitions
             @include transition(color 0.2s ease-in-out);
             @include transition(background-color 0.2s ease-in-out);
-
-
-            &:hover {
-                // Colors
-                color: palette(skyblue);
-                background-color: palette(skyblue, mid-light);
-
-                // Transforms
-                // @include transform(translateY(-10px));
-            }
         }
     }
 

@@ -521,31 +521,42 @@ article ul {
     margin: 0;
     padding: 0; }
 
-.title-card {
+.simple-subscription h1 a {
+  color: #bab7a9;
+  background-color: #eeeeea; }
+  .simple-subscription h1 a:hover {
+    background-color: #e8e7e1; }
+
+.title-card h1 a {
+  color: #97C3F0;
+  background-color: #f0f6fd; }
+  .title-card h1 a:hover {
+    color: #97C3F0;
+    background-color: #e7f1fc; }
+
+.title-card, .simple-subscription {
   text-align: center;
   margin-bottom: 0.4em;
   max-width: 45em;
   margin-left: auto;
   margin-right: auto; }
-  .title-card::after {
+  .title-card::after, .simple-subscription::after {
     clear: both;
     content: "";
     display: table; }
-  .title-card h1 {
+  .title-card h1, .simple-subscription h1 {
     margin-bottom: 0;
     padding-bottom: 0;
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 100%; }
-    .title-card h1:last-child {
+    .title-card h1:last-child, .simple-subscription h1:last-child {
       margin-right: 0; }
     @media screen and (max-width: 540px) {
-      .title-card h1 {
+      .title-card h1, .simple-subscription h1 {
         margin-bottom: 0.1em; } }
-    .title-card h1 a {
-      color: #97C3F0;
-      background-color: #f0f6fd;
+    .title-card h1 a, .simple-subscription h1 a {
       border-top-left-radius: 2em;
       border-top-right-radius: 2em;
       border-bottom-left-radius: 2em;
@@ -559,10 +570,7 @@ article ul {
       -webkit-transition: background-color 0.2s ease-in-out;
       -moz-transition: background-color 0.2s ease-in-out;
       transition: background-color 0.2s ease-in-out; }
-      .title-card h1 a:hover {
-        color: #97C3F0;
-        background-color: #e7f1fc; }
-  .title-card h2 {
+  .title-card h2, .simple-subscription h2 {
     margin-top: 2em;
     color: #D1CFC5;
     font-family: Avenir Next;
@@ -572,10 +580,10 @@ article ul {
     display: block;
     margin-right: 4.82916%;
     width: 100%; }
-    .title-card h2:last-child {
+    .title-card h2:last-child, .simple-subscription h2:last-child {
       margin-right: 0; }
     @media screen and (max-width: 540px) {
-      .title-card h2 {
+      .title-card h2, .simple-subscription h2 {
         display: none; } }
 
 /*# sourceMappingURL=app.css.map */
