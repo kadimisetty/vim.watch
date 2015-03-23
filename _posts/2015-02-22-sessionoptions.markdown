@@ -1,6 +1,6 @@
 ---
 layout:           post
-title:            views
+title:            sessionoptions
 date:             2015-03-22
 duration_minutes: 3
 vimeo_id:         122938462
