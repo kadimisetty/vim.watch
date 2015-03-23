@@ -7,6 +7,7 @@ vimeo_id:         121657990
 comments:         true
 ---
 - [Section 21.4](http://vimdoc.sourceforge.net/htmldoc/usr_21.html#21.4 "Sessions")
+- [session-options](http://vim.watch/sessions/ "Sessions")
 - [Go away and Come back](http://vim.wikia.com/wiki/Go_away_and_come_back "Go away and Come back")
 - [Vim Obsession](https://github.com/tpope/vim-obsession "Obsession")
 - [ProSession](https://github.com/dhruvasagar/vim-prosession "ProSession")
