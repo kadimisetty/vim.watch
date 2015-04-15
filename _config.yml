@@ -3,7 +3,7 @@ title: Vim Watch
 email: s@sri.io
 description: > # this means to ignore newlines until "baseurl:"
   Sharpen your Vim skills in short digestible video episodes released
-  bi-weekly. For those that desire to learn past the basics.
+  bi-weekly.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://vim.watch" # the base hostname & protocol for your site
 twitter_username: sri
