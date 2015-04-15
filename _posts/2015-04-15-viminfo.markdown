@@ -3,7 +3,7 @@ layout:           post
 title:            viminfo
 date:             2015-04-15
 duration_minutes: 7
-vimeo_id:         125017347
+vimeo_id:         125022196
 comments:         true
 ---
 - [The viminfo file](http://vimdoc.sourceforge.net/htmldoc/starting.html#viminfo "viminfo")
